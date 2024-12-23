@@ -1,6 +1,9 @@
 from fastapi import FastAPI, HTTPException
 from api.database import database, species, organs_tissues, microscope_types, images
 
+# ローカル環境でのデータベース接続
+# from database import database, species, organs_tissues, microscope_types, images
+
 app = FastAPI()
 
 # データベース接続イベント
