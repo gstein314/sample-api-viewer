@@ -1,2 +1,5 @@
 fastapi-slim
 uvicorn
+sqlalchemy
+databases
+aiosqlite
