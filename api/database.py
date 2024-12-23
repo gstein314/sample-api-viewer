@@ -3,7 +3,7 @@ from sqlalchemy import (
 )
 from databases import Database
 
-DATABASE_URL = "sqlite:///./test.db"
+DATABASE_URL = f"sqlite:///{os.path.join(BASE_DIR, 'test.db')}"
 
 # データベース接続
 database = Database(DATABASE_URL)
