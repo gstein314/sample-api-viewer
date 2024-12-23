@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from database import database, species, organs_tissues, microscope_types, images
+from api.database import database, species, organs_tissues, microscope_types, images
 
 app = FastAPI()
 
