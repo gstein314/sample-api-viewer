@@ -4,7 +4,9 @@ from api.database import database, species, organs_tissues, microscope_types, im
 # ローカル環境でのデータベース接続
 # from database import database, species, organs_tissues, microscope_types, images
 
-app = FastAPI()
+app = FastAPI( title="RIKEN EM Image Viewer test API",
+    description="This is a custom API description for the documentation.",
+    version="1.0.0",)
 
 # データベース接続イベント
 @app.on_event("startup")
